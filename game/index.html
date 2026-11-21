@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lantern Garden — Spot the Difference</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #141824; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+  canvas { width: min(100vw, calc((100vh - 40px) * 1280 / 720)); height: auto; display: block; background: #20263a; }
+  #status { color: #9aa3b8; font: 14px sans-serif; margin: 8px 0 0; text-align: center; max-width: 90vw; }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720" aria-label="Lantern Garden spot the difference game"></canvas>
+<p id="status" aria-live="polite">Loading…</p>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
